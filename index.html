@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="icon" href="profile.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="top"></header>
+    <main class="profile-page">
+      <figure><img src="profile.jpg" alt="profile pic" id="profile" /></figure>
+      <div class="name">
+        <p>KUCHI MERCY</p>
+      </div>
+      <div class="names"><p>Web Developer 	&#9830  Content Writer 	&#9830  Biochemist</p></div>
+      <br />
+      <hr />
+      <nav class="about">
+        <a>ABOUT KUCHI</a>| <a>WEB PROJECTS</a>| <a>ARTICLES</a>|
+        <a>RESEARCH THESIS</a>
+      </nav>
+      <hr />
+      <figure>
+        <img src="book.JPG" alt="book cover" id="book" />
+      </figure>
+      <br />
+      <div>
+        <p class="text">
+          <strong>"THE GAME OF MONOPOLY"</strong>- KUCHI MERCY's best selling
+          E-book is now available for purchase on Amazon
+          <img src="amazon icon.png" id="amazon" /> .
+        </p>
+        <p class="text">
+          To pre-order directly from the author, input your email address and click the Pre-order button!
+        </p>
+        <form><input type="email" placeholder="alphanumeric@example.com" id="email" required />
+          <br/></form>
+          
+          <script>let email = document.querySelector("#email");
+            function send() {
+              console.log(email.value);
+             
+            }</script>
+          <br/>
+          <button class="btn" id="btn">Click to Pre-order</button>
+          <script>
+            function test() {
+              console.log("Pre-order Successful!")
+              console.log(email.value);
+            }
+            let btn = document.getElementById("btn");
+            btn.addEventListener("click", (event) => {
+              test();
+            });
+          </script>
+        
+        <p class="slot">Limited slots available!</p>
+      </div>
+
+      
+      
+    </main>
+  </body>
+  <footer>
+    <div class="footer_top">
+      <a
+        href="https://web.facebook.com/mercy.duru.3"
+        class="fa fa-facebook" target="_blank"
+      ></a>
+      <a href="https://wa.link/z4hoet" class="fa fa-whatsapp" target="_blank"></a>
+      <a href="https://twitter.com/Duru_Akuchi" class="fa fa-twitter" target="_blank"></a>
+    </div>
+    <br />
+    <div class="footer_bottom">
+      <img src="gmail icon.png" alt="Gmail" id="gmail" />
+      readypenwriters@gmail.com
+      <p>&copy Kuchi Mercy and ReadyPenWriters, 2022. All Rights Reserved.</p>
+      <p>
+        Unauthorized use and/or duplication of this material without express and
+        written permission from this site’s author and/or owner is strictly
+        prohibited. Excerpts and links may be used, provided that full and clear
+        credit is given to Kuchi Mercy and ReadyPenWriters with appropriate and
+        specific direction to the original content.
+      </p>
+    </div>
+  </footer>
+</html>
